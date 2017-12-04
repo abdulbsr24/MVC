@@ -10,5 +10,6 @@ namespace MvcApplication1.Models
         public int deptno { get; set; }
         public string Dname { get; set; }
         public string loc { get; set; }
+        public string Address { get; set; }
     }
 }
