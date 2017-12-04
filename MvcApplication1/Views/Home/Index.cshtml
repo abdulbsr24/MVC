@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2> Product Detials </h2>
+<hr />
+@using(Html.BeginForm())
+{
+    @Html.Label("product name:");
+    @Html.TextBox("pname");
+    <br />
+    <br />
+    @Html.Label("unit price:");
+    @Html.TextBox("uprice")
+    <br />
+    <br />
+    @Html.Label("Qauntity")
+    @Html.TextBox("Qty")
+    <br />
+    <br />
+    <input type="submit" id="sb1" name="sbi" value="Get Total" />
+}
+
+@{
+    if (IsPost == true)
+    {
+
+        string str = (string)ViewData["prdname"];
+        int n = ViewBag.total;
+        <p style="border:2px solid ;background-color:lightyellow">
+            product Name:@str<br />
+            total Amount : @n
+        </p>
+    }
+
+}
+    
+    
+
+
+ 
