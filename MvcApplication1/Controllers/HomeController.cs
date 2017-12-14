@@ -35,5 +35,9 @@ namespace MvcApplication1.Controllers
             Response.Write("Request Dept" + id);
             return View();
         }
+        public ActionResult Details1()
+        {
+             return View();
+        }
     }
 }
